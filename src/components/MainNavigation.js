@@ -15,6 +15,9 @@ class MainNav extends Component {
         <div className="wrapperForContent">
           {this.props.children}
         </div>
+        <div className="footer">
+          <p className="footerInfo">© 2018 Stefanie Boscarino</p>
+        </div>
       </div>
     );
   }

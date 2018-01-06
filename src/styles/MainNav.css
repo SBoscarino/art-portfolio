@@ -1,29 +1,38 @@
 /* mobile first */
+html {
+  background-color: #8f4e70;
+  color: white;
+}
 nav {
   text-align: center;
   padding-top: 10px;
 }
 .nav-link {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 25px;
   padding: 3px;
   margin: 5px;
 }
 .selected {
-  color: black;
+  color: #f3adba;
   font-weight: bold;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #f3adba;
 }
-.wrapperForContent {
-  padding-left: 7px;
+.footerInfo {
+  margin: 0px;
+  background-color: #f3adba;
 }
 
 
 /* All Pages Affected */
 h1 {
   padding-top: 10px;
+  padding-left: 10px;
 }
+
+
+
 
 /* tablets+ */
 @media screen and (min-width: 768px) {

@@ -1,0 +1,18 @@
+.info1, .info2, .info3{
+  text-align: center;
+}
+.bioPhoto {
+  border: #f57 solid 4px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+p {
+  padding: 10px;
+  margin: 10px 0px;
+}
+.bioParagraph1, .bioParagraph2, .bioParagraph3{
+  background-color: #fbc;
+  color: #967;
+}
