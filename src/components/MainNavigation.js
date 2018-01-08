@@ -5,7 +5,7 @@ import '../styles/MainNav.css';
 class MainNav extends Component {
   render() {
     return (
-      <div classname="wrapperDiv">
+      <div className="wrapperDiv">
         <nav>
           <NavLink activeClassName="selected" className="nav-link" exact to="/Home">Home</NavLink>
           <NavLink activeClassName="selected" className="nav-link" exact to="/Portfolio">Portfolio</NavLink>

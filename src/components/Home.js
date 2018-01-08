@@ -8,7 +8,7 @@ class Home extends Component {
       <div>
         <h1>Welcome!</h1>
         <p>Welcome to my art portfolio.</p>
-        <img className="logo" src={logo}/>
+        <img alt="logo" className="logo" src={logo}/>
       </div>
     )
   }
