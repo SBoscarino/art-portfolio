@@ -1,0 +1,25 @@
+.innerWrapper {
+  text-align: center;
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+li {
+  flex-grow: 1;
+}
+li:hover {
+  color: #f3adba;
+  font-weight: bold;
+  border-bottom: 3px solid #f3adba;
+}
+
+li:active {
+  color: #f3adba;
+  font-weight: bold;
+  border-bottom: 3px solid #f3adba;
+}
+
+.noShow {
+  color: red;
+}

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PortfolioNav from '../components/PortfolioNav.js';
-import PortfolioImages from '../components/PortfolioImages.js';
 
+//contains the top view of the portfolio navigation and the area that will contain the image section.
 class Portfolio extends Component {
 
   render(){
@@ -9,8 +9,10 @@ class Portfolio extends Component {
       <div>
         <h1>Portfolio</h1>
         <PortfolioNav PortfolioNav={this.props.PortfolioNav} />
-        <section className="imageWrapper">
-          <PortfolioImages PortfolioImages={this.props.PortfolioImages} />
+        <section className="secondNavWrapper">
+          <section className="imageWrapper">
+
+          </section>
         </section>
       </div>
     )
