@@ -17,30 +17,43 @@ class PortfolioNav extends Component {
       illustration: false,
     }
     this.UIUXPage = this.UIUXPage.bind(this);
+    this.ClassicPage = this.ClassicPage.bind(this);
+    this.DigitalPage = this.DigitalPage.bind(this);
+    this.IllustrationPage = this.IllustrationPage.bind(this);
   }
   UIUXPage(event){
     console.log("uiux");
-    this.setState({uiux: true});
+    this.setState({uiux: true, classic: false, digital: false, illustration: false});
   }
-
-
   ClassicPage(){
     console.log("cl");
+    this.setState({uiux: false, classic: true, digital: false, illustration: false});
   }
   DigitalPage(){
     console.log("di");
+    this.setState({uiux: false, classic: false, digital: true, illustration: false});
   }
   IllustrationPage(){
     console.log("Il");
+    this.setState({uiux: false, classic: false, digital: false, illustration: true});
   }
 
   render(){
     let currentView;
     console.log(this.state)
     if (this.state.uiux === false){
-      currentView = <p>Ain't nothing here.</p>
+      currentView = <p>There is nothing here.</p>
     } if (this.state.uiux === true) {
       currentView = <p>uiux is active</p>
+    }
+    if (this.state.classic === true) {
+      currentView = <p>classic is active</p>
+    }
+    if (this.state.illustration === true) {
+      currentView = <p>illustration is active</p>
+    }
+    if (this.state.digital === true) {
+      currentView = <p>digital is active</p>
     }
     return (
       <div>
