@@ -11,7 +11,7 @@ class PortfolioNav extends Component {
     super();
 
     this.state = {
-      uiux: false,
+      uiux: true,
       classic: false,
       digital: false,
       illustration: false,
@@ -19,23 +19,30 @@ class PortfolioNav extends Component {
     this.UIUXPage = this.UIUXPage.bind(this);
     this.ClassicPage = this.ClassicPage.bind(this);
     this.DigitalPage = this.DigitalPage.bind(this);
-    this.IllustrationPage = this.IllustrationPage.bind(this);
   }
   UIUXPage(event){
-    console.log("uiux");
-    this.setState({uiux: true, classic: false, digital: false, illustration: false});
+    this.setState({
+      uiux: true,
+      classic: false,
+      digital: false,
+      illustration: false
+    });
   }
   ClassicPage(){
-    console.log("cl");
-    this.setState({uiux: false, classic: true, digital: false, illustration: false});
+    this.setState({
+      uiux: false,
+      classic: true,
+      digital: false,
+      illustration: false
+    });
   }
   DigitalPage(){
-    console.log("di");
-    this.setState({uiux: false, classic: false, digital: true, illustration: false});
-  }
-  IllustrationPage(){
-    console.log("Il");
-    this.setState({uiux: false, classic: false, digital: false, illustration: true});
+    this.setState({
+      uiux: false,
+      classic: false,
+      digital: true,
+      illustration: false
+    });
   }
 
   render(){
@@ -44,24 +51,27 @@ class PortfolioNav extends Component {
     if (this.state.uiux === false){
       currentView = <p>There is nothing here.</p>
     } if (this.state.uiux === true) {
-      currentView = <p>uiux is active</p>
-    }
-    if (this.state.classic === true) {
-      currentView = <p>classic is active</p>
-    }
-    if (this.state.illustration === true) {
-      currentView = <p>illustration is active</p>
-    }
-    if (this.state.digital === true) {
-      currentView = <p>digital is active</p>
+      currentView = <div>
+        <h1>User Interaction & User Experience</h1>
+        <p>My main focus when creating a space for my users is simplicity and cleanliness. I tend to lean toward simple palettes and shapes.</p>
+        </div>
+    } if (this.state.classic === true) {
+      currentView = <div>
+        <h1>Traditional</h1>
+        <p>I have quite a few interests in this area due to my classical training. I enjoy drawing critters and spooky things. I love to study anatomy.</p>
+        </div>
+    } if (this.state.digital === true) {
+      currentView = <div>
+        <h1>Digital</h1>
+        <p>Digital art is a new space for me. I am enjoying experimentation with my tablet, Photoshop and Illustrator.</p>
+        </div>
     }
     return (
       <div>
         <ul className="innerWrapper">
           <li><button onClick={this.UIUXPage}>UI/UX</button></li>
-          <li><button onClick={this.ClassicPage}>Classic</button></li>
+          <li><button onClick={this.ClassicPage}>Traditional</button></li>
           <li><button onClick={this.DigitalPage}>Digital</button></li>
-          <li><button onClick={this.IllustrationPage}>Illustration</button></li>
         </ul>
         <div className="imageHolder">
           {currentView}
