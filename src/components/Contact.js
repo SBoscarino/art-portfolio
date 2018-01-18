@@ -20,19 +20,21 @@ class Contact extends Component {
       <div>
         <h1>Contact Me</h1>
         <section className="contactInfo">
-          <p>Do you...</p>
+          <p className="pinkMe">Do you...</p>
 
           <p className="changingWord">{this.state.currentString}</p>
-          <p>Awesome!</p>
-          <p>Contact me through the following venues:</p>
-          <ul>
-            <li>GitHub</li>
-            <li>Tumblr</li>
-            <li>LinkedIn</li>
-            <li>Twitter</li>
-          </ul>
-        </section>
-        <section className="contactBody">
+          <p className="pinkMe">Contact me through the following venues:</p>
+          <div className="ContactVenueContainer">
+            <ul className="flexOuterContact">
+              <li><a href="https://github.com/sbscrino" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/stefanie-boscarino-17566b147/" target="_blank">LinkedIn</a></li>
+            </ul>
+            <ul className="flexOuterContact">
+              <li><a href="https://www.tumblr.com/blog/ilickdeath" target="_blank">Tumblr</a></li>
+              <li><a href="https://www.instagram.com/blaqk.cat/" target="_blank">Instagram</a></li>
+              <li><a href="https://twitter.com/StefBoscarino" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
         </section>
       </div>
     )

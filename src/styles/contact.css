@@ -5,3 +5,39 @@
 .fadeAnimation {
   color: red;
 }
+
+.flexOuterContact{
+  list-style: none;
+  display: flex;
+  text-align: center;
+  padding: 0px;
+}
+.ContactVenueContainer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li {
+  padding: 2px;
+}
+a {
+  text-decoration: none;
+  color: #f57;
+  font-weight: 300;
+}
+li:hover {
+  color: #f3adba;
+  font-weight: bold;
+  border-bottom: 3px solid #f3adba;
+}
+li:active {
+  color: #f3adba;
+  font-weight: bold;
+  border-bottom: 0px;
+}
+.pinkMe {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #f3adba;
+}

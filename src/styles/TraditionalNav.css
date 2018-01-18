@@ -1,10 +1,9 @@
 .innerWrapper {
   text-align: center;
-  padding: 5px;
+  padding: 0px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 li {
   flex-grow: 1;

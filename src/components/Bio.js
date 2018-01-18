@@ -20,7 +20,7 @@ class Bio extends Component {
         <img alt="Daniel the cat" className="bioPhoto cat" src={cat}/>
         <div className="info2">
           <p className="bioParagraph bioParagraph3">
-            Currently, Stefanie lives in a cozy spot in the Dallas area, living with her cat, Daniel (shown above), her boyfriend, and a roomate. On weekends, she codes, paints, and finds time to practice digital art. She frequents tech meetups, makerspaces, craft fairs, animation, gaming, and board game conventions, curio shops and book stores, and museums around town.
+            Currently, Stefanie lives in a cozy spot in the Dallas area, living with her cat, Daniel (shown above), her boyfriend, and a roomate. On weekends, she codes, paints, and finds time to practice digital art. She frequents tech meetups, makerspaces, craft fairs, conventions of all kinds, curio shops and book stores, and museums around town.
           </p>
         </div>
       </div>

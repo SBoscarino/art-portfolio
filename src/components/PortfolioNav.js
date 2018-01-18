@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 import '../styles/PortfolioNav.css';
-import NoImages from '../components/ImageSections/NoImages.js';
-import UIDesign from '../components/ImageSections/UIDesign.js';
-import Classic from '../components/ImageSections/Classic.js';
-import Digital from '../components/ImageSections/Digital.js';
 import Traditional from '../components/Traditional.js';
 
 //This component is going to be a catch-all until I can separate it into smaller sections. For now, this component will hold navigation AND the functions that will replace the contents of ImageHolder to show each section's page. Each function will show/hide a section by adding or taking away a class.

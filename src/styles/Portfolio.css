@@ -24,6 +24,6 @@ li:active {
   color: red;
 }
 
-h1 {
-  text-align: center;
+.onlyInDesktop{
+  display: none;
 }

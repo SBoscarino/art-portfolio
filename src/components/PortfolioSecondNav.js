@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../styles/PortfolioNav.css';
 
 
 // This component contains the SECOND navigation menu only accessible by clicking on "traditional" in the main portfolio navigation menu
