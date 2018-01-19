@@ -11,13 +11,19 @@ li {
 li:hover {
   color: #f3adba;
   font-weight: bold;
-  border-bottom: 3px solid #f3adba;
+}
+.thisGuy{
+  background-color: red;
 }
 
 li:active {
   color: #f3adba;
   font-weight: bold;
-  border-bottom: 3px solid #f3adba;
+}
+.separator {
+  width: 10px;
+  height: 10px;
+  color: red;
 }
 
 .noShow {

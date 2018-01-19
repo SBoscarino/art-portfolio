@@ -8,13 +8,13 @@
 li {
   flex-grow: 1;
 }
-li:hover {
+.navButton:hover {
   color: #f3adba;
   font-weight: bold;
   border-bottom: 3px solid #f3adba;
 }
 
-li:active {
+.navButton:active {
   color: #f3adba;
   font-weight: bold;
   border-bottom: 3px solid #f3adba;

@@ -11,7 +11,6 @@ class PortfolioNav extends Component {
       uiux: true,
       classic: false,
       digital: false,
-      illustration: false,
     }
     this.UIUXPage = this.UIUXPage.bind(this);
     this.ClassicPage = this.ClassicPage.bind(this);
@@ -55,7 +54,9 @@ class PortfolioNav extends Component {
     } if (this.state.classic === true) {
       currentView = <div>
         <h1>Traditional</h1>
-        <Traditional />
+        <div>
+          <Traditional/>
+        </div>
         </div>
     } if (this.state.digital === true) {
       currentView = <div>
@@ -66,9 +67,9 @@ class PortfolioNav extends Component {
     return (
       <div>
         <ul className="innerWrapper">
-          <li><button onClick={this.UIUXPage}>UI/UX</button></li>
-          <li><button onClick={this.ClassicPage}>Traditional</button></li>
-          <li><button onClick={this.DigitalPage}>Digital</button></li>
+          <li className="navButton"><button onClick={this.UIUXPage}>UI/UX</button></li>
+          <li className="navButton"><button onClick={this.ClassicPage}>Traditional</button></li>
+          <li className="navButton"><button onClick={this.DigitalPage}>Digital</button></li>
         </ul>
         <div className="imageHolder">
           {currentView}
