@@ -59,11 +59,15 @@ class PortfolioSecondNav extends Component {
     let imageViewStyle= {
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "center",
+      textAlign: "center",
+      margin: 6,
       padding: 7
     }
     let singleImage = {
-      padding: 2,
+      flexGrow: 1,
+      paddingBottom: 0,
+      marginRight: 2,
+      marginLeft: 2
     }
     console.log("trad", this.state);
     if (this.state.illustration === true){
@@ -71,6 +75,8 @@ class PortfolioSecondNav extends Component {
       imageView = <div>
         <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
       </div>
@@ -98,7 +104,7 @@ class PortfolioSecondNav extends Component {
         <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+
       </div>
     }
     console.log(this.state)
@@ -106,11 +112,11 @@ class PortfolioSecondNav extends Component {
       <div className="flexWrapperForSecondNav">
         <ul className="innerWrapper" >
           <li><button onClick={this.sketchesPage}>sketches</button></li>
-          <li><button onClick={this.illustrationPage}>Illustration</button></li>
+          <li><button onClick={this.illustrationPage}>illustration</button></li>
         </ul>
         <ul className="innerWrapper">
           <li><button onClick={this.threeDeePage}>3D</button></li>
-          <li><button onClick={this.childrensIllustrationPage}>Childrens Illustration</button></li>
+          <li><button onClick={this.childrensIllustrationPage}>children's illustration</button></li>
         </ul>
         <section className="TradViewer">
           <div className="infoHolder">

@@ -48,35 +48,39 @@ class PortfolioNav extends Component {
     let imageViewStyle= {
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "center",
+      textAlign: "center",
+      margin: 6,
       padding: 7
-    }
+      }
     let singleImage = {
-      padding: 2,
+      flexGrow: 1,
+      paddingBottom: 0,
+      marginRight: 2,
+      marginLeft: 2
     }
     console.log(this.state)
     if (this.state.uiux === false){
       infoView = <p>There is nothing here.</p>
     } if (this.state.uiux === true) {
       infoView = <div>
-        <h1>User Interaction & User Experience</h1>
+        <h2>user interaction</h2>
+        <h2>& user experience</h2>
         <p>My main focus when creating a space for my users is simplicity and cleanliness. I tend to lean toward simple palettes and shapes.</p>
         </div>
         imageView = <div>
           <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
           <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-          <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         </div>
     } if (this.state.classic === true) {
       infoView = <div>
-        <h1>Traditional</h1>
+        <h2>traditional</h2>
         <div>
           <Traditional/>
         </div>
         </div>
     } if (this.state.digital === true) {
       infoView = <div>
-        <h1>Digital</h1>
+        <h2>digital</h2>
         <p>Digital art is a new space for me. I am enjoying experimentation with my tablet, Photoshop and Illustrator.</p>
         </div>
         imageView = <div>
@@ -91,8 +95,8 @@ class PortfolioNav extends Component {
       <div>
         <ul className="innerWrapper">
           <li className="navButton"><button onClick={this.UIUXPage}>UI/UX</button></li>
-          <li className="navButton"><button onClick={this.ClassicPage}>Traditional</button></li>
-          <li className="navButton"><button onClick={this.DigitalPage}>Digital</button></li>
+          <li className="navButton"><button onClick={this.ClassicPage}>traditional</button></li>
+          <li className="navButton"><button onClick={this.DigitalPage}>digital</button></li>
         </ul>
         <div className="infoHolder">
           {infoView}

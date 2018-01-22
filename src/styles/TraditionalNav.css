@@ -15,8 +15,6 @@ li:hover {
 .thisGuy{
   background-color: red;
 }
-.TradViewer {
-}
 li:active {
   color: #f3adba;
   font-weight: bold;

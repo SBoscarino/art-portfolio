@@ -7,10 +7,10 @@ class MainNav extends Component {
     return (
       <div className="wrapperDiv">
         <nav>
-          <NavLink activeClassName="selected" className="nav-link" exact to="/Home">Home</NavLink>
-          <NavLink activeClassName="selected" className="nav-link" exact to="/Portfolio">Portfolio</NavLink>
-          <NavLink activeClassName="selected" className="nav-link" exact to="/Bio">Bio</NavLink>
-          <NavLink activeClassName="selected" className="nav-link" exact to="/Contact">Contact</NavLink>
+          <NavLink activeClassName="selected" className="nav-link" exact to="/Home">home</NavLink>
+          <NavLink activeClassName="selected" className="nav-link" exact to="/Portfolio">portfolio</NavLink>
+          <NavLink activeClassName="selected" className="nav-link" exact to="/Bio">bio</NavLink>
+          <NavLink activeClassName="selected" className="nav-link" exact to="/Contact">contact</NavLink>
         </nav>
         <div className="wrapperForContent">
           {this.props.children}

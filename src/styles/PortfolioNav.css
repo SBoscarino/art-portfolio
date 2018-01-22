@@ -27,7 +27,26 @@ li {
 h1 {
   text-align: center;
 }
+h2 {
+  text-align: center;
+  margin: 0px;
+}
 
 .LionFiller {
-  height: 110px;
+  height: 100px;
+  border: #f57 solid 3px;
+  border-radius: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .imageHolder{
+    padding-left: 200px;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+  }
+  .LionFiller {
+    height: 200px;
+    border: #f57 solid 3px;
+    border-radius: 100px;
+  }
 }
