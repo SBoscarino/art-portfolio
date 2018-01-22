@@ -11,36 +11,36 @@ class PortfolioSecondNav extends Component {
 
     this.state = {
       threeDee: false,
-      drawings: false,
+      sketches: false,
       illustration: false,
       childrensIllustration: false
     }
     this.childrensIllustrationPage = this.childrensIllustrationPage.bind(this);
-    this.threedeePage = this.threedeePage.bind(this);
+    this.threeDeePage = this.threeDeePage.bind(this);
     this.illustrationPage = this.illustrationPage.bind(this);
-    this.drawingsPage = this.drawingsPage.bind(this);
+    this.sketchesPage = this.sketchesPage.bind(this);
   }
   childrensIllustrationPage(){
     this.setState({
       childrensIllustration: true,
       threeDee: false,
-      drawings: false,
+      sketches: false,
       illustration: false
     });
   }
-  threedeePage(){
+  threeDeePage(){
     this.setState({
       childrensIllustration: false,
       threeDee: true,
-      drawings: false,
+      sketches: false,
       illustration: false
     });
   }
-  drawingsPage(){
+  sketchesPage(){
     this.setState({
       childrensIllustration: false,
       threeDee: false,
-      drawings: true,
+      sketches: true,
       illustration: false
     });
   }
@@ -48,7 +48,7 @@ class PortfolioSecondNav extends Component {
     this.setState({
       childrensIllustration: false,
       threeDee: false,
-      drawings: false,
+      sketches: false,
       illustration: true
     });
   }
@@ -66,11 +66,38 @@ class PortfolioSecondNav extends Component {
       padding: 2,
     }
     console.log("trad", this.state);
-    if (this.state.illustrationPage === true){
-      infoView = <p>Hey!</p>
+    if (this.state.illustration === true){
+      infoView = <p>Most of my illustration takes a mixed media approach, mainly through pen and watercolor.</p>
       imageView = <div>
         <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+      </div>
+    }
+    if (this.state.sketches === true) {
+      infoView = <div><p>Quick sketches, although fun to draw, are not necessarily the best example of what an artist can offer in terms of skill. What they can show is thought process. I hope you like them.</p></div>
+      imageView = <div>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+      </div>
+    }
+    if (this.state.threeDee === true) {
+      infoView = <div><p>I work with a range of materials like metals, papier mache and clay.</p></div>
+      imageView = <div>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+      </div>
+    }
+    if (this.state.childrensIllustration === true) {
+      infoView = <div><p>Work appropriate for children's books.</p></div>
+      imageView = <div>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
         <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
       </div>
     }
@@ -78,12 +105,12 @@ class PortfolioSecondNav extends Component {
     return (
       <div className="flexWrapperForSecondNav">
         <ul className="innerWrapper" >
-          <li><button onClick={this.drawingsPage}>Drawings</button></li>
+          <li><button onClick={this.sketchesPage}>sketches</button></li>
           <li><button onClick={this.illustrationPage}>Illustration</button></li>
         </ul>
         <ul className="innerWrapper">
           <li><button onClick={this.threeDeePage}>3D</button></li>
-          <li><button onClick={this.childrensIllustrationPage}>Children's Illustration</button></li>
+          <li><button onClick={this.childrensIllustrationPage}>Childrens Illustration</button></li>
         </ul>
         <section className="TradViewer">
           <div className="infoHolder">
