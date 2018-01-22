@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/PortfolioNav.css';
+import LionFillerImage from '../images/LionFillerImage.jpg';
 
 
 
@@ -53,15 +54,30 @@ class PortfolioSecondNav extends Component {
   }
 
   render(){
-    let traditionalView;
+    let infoView;
+    let imageView;
+    let imageViewStyle= {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      padding: 7
+    }
+    let singleImage = {
+      padding: 2,
+    }
     console.log("trad", this.state);
     if (this.state.illustrationPage === true){
-      traditionalView = <p>Hey!</p>
+      infoView = <p>Hey!</p>
+      imageView = <div>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+      </div>
     }
     console.log(this.state)
     return (
       <div className="flexWrapperForSecondNav">
-        <ul className="innerWrapper">
+        <ul className="innerWrapper" >
           <li><button onClick={this.drawingsPage}>Drawings</button></li>
           <li><button onClick={this.illustrationPage}>Illustration</button></li>
         </ul>
@@ -70,7 +86,12 @@ class PortfolioSecondNav extends Component {
           <li><button onClick={this.childrensIllustrationPage}>Children's Illustration</button></li>
         </ul>
         <section className="TradViewer">
-          {traditionalView}
+          <div className="infoHolder">
+          {infoView}
+        </div>
+          <div className="imageHolder" style={imageViewStyle}>
+          {imageView}
+        </div>
         </section>
       </div>
     )
