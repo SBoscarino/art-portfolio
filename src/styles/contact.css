@@ -23,7 +23,7 @@ li {
 a {
   text-decoration: none;
   color: #f57;
-  font-weight: 300;
+  font-weight: 400;
 }
 li:hover {
   color: #f3adba;
@@ -43,4 +43,14 @@ li:active {
   margin-bottom: 10px;
   background: #f3adba;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .pinkMe {
+    padding: 30px 50px;
+  }
+  .ContactVenueContainer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }

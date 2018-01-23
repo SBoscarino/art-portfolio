@@ -16,3 +16,12 @@ p {
   background-color: #fbc;
   color: #967;
 }
+
+@media screen and (min-width: 768px) {
+  .bioPhoto {
+    width: 50%;
+  }
+  p {
+    padding: 30px 50px;
+  }
+}

@@ -12,7 +12,7 @@ class PortfolioSecondNav extends Component {
     this.state = {
       threeDee: false,
       sketches: false,
-      illustration: false,
+      illustration: true,
       childrensIllustration: false
     }
     this.childrensIllustrationPage = this.childrensIllustrationPage.bind(this);
@@ -56,73 +56,59 @@ class PortfolioSecondNav extends Component {
   render(){
     let infoView;
     let imageView;
-    let imageViewStyle= {
-      display: "flex",
-      flexWrap: "wrap",
-      textAlign: "center",
-      margin: 6,
-      padding: 7
-    }
-    let singleImage = {
-      flexGrow: 1,
-      paddingBottom: 0,
-      marginRight: 2,
-      marginLeft: 2
-    }
     console.log("trad", this.state);
     if (this.state.illustration === true){
       infoView = <p>Most of my illustration takes a mixed media approach, mainly through pen and watercolor.</p>
       imageView = <div>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
       </div>
     }
     if (this.state.sketches === true) {
       infoView = <div><p>Quick sketches, although fun to draw, are not necessarily the best example of what an artist can offer in terms of skill. What they can show is thought process. I hope you like them.</p></div>
       imageView = <div>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
       </div>
     }
     if (this.state.threeDee === true) {
       infoView = <div><p>I work with a range of materials like metals, papier mache and clay.</p></div>
       imageView = <div>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
       </div>
     }
     if (this.state.childrensIllustration === true) {
       infoView = <div><p>Work appropriate for children's books.</p></div>
       imageView = <div>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-        <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
       </div>
     }
     console.log(this.state)
     return (
       <div className="flexWrapperForSecondNav">
         <ul className="innerWrapper" >
-          <li><button onClick={this.sketchesPage}>sketches</button></li>
-          <li><button onClick={this.illustrationPage}>illustration</button></li>
+          <li className="secondNavButtons" onClick={this.sketchesPage}>sketches</li>
+          <li className="secondNavButtons"  onClick={this.illustrationPage}>illustration</li>
         </ul>
         <ul className="innerWrapper">
-          <li><button onClick={this.threeDeePage}>3D</button></li>
-          <li><button onClick={this.childrensIllustrationPage}>children's illustration</button></li>
+          <li className="secondNavButtons" onClick={this.threeDeePage}>3D</li>
+          <li className="secondNavButtons"  onClick={this.childrensIllustrationPage}>children's illustration</li>
         </ul>
         <section className="TradViewer">
           <div className="infoHolder">
           {infoView}
         </div>
-          <div className="imageHolder" style={imageViewStyle}>
+          <div className="imageHolderTwo imageViewStyle">
           {imageView}
         </div>
         </section>

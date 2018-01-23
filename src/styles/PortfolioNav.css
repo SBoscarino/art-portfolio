@@ -37,12 +37,40 @@ h2 {
   border: #f57 solid 3px;
   border-radius: 60px;
 }
+.imageViewStyle {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 6px;
+  padding: 7px;
+}
+.singleImage {
+  flex-grow: 1;
+  padding-bottom: 0px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.secondNavButtons {
+  color: #af7983;
+}
 
 @media screen and (min-width: 768px) {
+  .infoHolder{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   .imageHolder{
-    padding-left: 200px;
     border-left: 5px black solid;
     border-right: 5px black solid;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .imageHolderTwo{
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .LionFiller {
     height: 200px;

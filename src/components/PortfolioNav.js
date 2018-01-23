@@ -45,19 +45,6 @@ class PortfolioNav extends Component {
   render(){
     let infoView;
     let imageView;
-    let imageViewStyle= {
-      display: "flex",
-      flexWrap: "wrap",
-      textAlign: "center",
-      margin: 6,
-      padding: 7
-      }
-    let singleImage = {
-      flexGrow: 1,
-      paddingBottom: 0,
-      marginRight: 2,
-      marginLeft: 2
-    }
     console.log(this.state)
     if (this.state.uiux === false){
       infoView = <p>There is nothing here.</p>
@@ -68,8 +55,8 @@ class PortfolioNav extends Component {
         <p>My main focus when creating a space for my users is simplicity and cleanliness. I tend to lean toward simple palettes and shapes.</p>
         </div>
         imageView = <div>
-          <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-          <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+          <img className="singleImage LionFiller" alt="lion filler" src={LionFillerImage}/>
+          <img className="singleImage LionFiller" alt="lion filler" src={LionFillerImage}/>
         </div>
     } if (this.state.classic === true) {
       infoView = <div>
@@ -84,24 +71,24 @@ class PortfolioNav extends Component {
         <p>Digital art is a new space for me. I am enjoying experimentation with my tablet, Photoshop and Illustrator.</p>
         </div>
         imageView = <div>
-          <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-          <img style={singleImage} className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-          <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-          <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
-          <img style={singleImage}className="LionFiller" alt="lion filler" src={LionFillerImage}/>
+          <img className="singleImage LionFiller" alt="lion filler" src={LionFillerImage}/>
+          <img className="singleImage LionFiller" alt="lion filler" src={LionFillerImage}/>
+          <img className="singleImage LionFiller" alt="lion filler" src={LionFillerImage}/>
+          <img className="singleImage LionFiller" alt="lion filler" src={LionFillerImage}/>
+          <img className="singleImage LionFiller" alt="lion filler" src={LionFillerImage}/>
         </div>
     }
     return (
       <div>
         <ul className="innerWrapper">
-          <li className="navButton"><button onClick={this.UIUXPage}>UI/UX</button></li>
-          <li className="navButton"><button onClick={this.ClassicPage}>traditional</button></li>
-          <li className="navButton"><button onClick={this.DigitalPage}>digital</button></li>
+          <li className="navButton"  onClick={this.UIUXPage}>ui / ux</li>
+          <li className="navButton" onClick={this.ClassicPage}>traditional</li>
+          <li className="navButton" onClick={this.DigitalPage}>digital</li>
         </ul>
         <div className="infoHolder">
           {infoView}
         </div>
-        <div className="imageHolder" style={imageViewStyle}>
+        <div className="imageHolder imageViewStyle">
           {imageView}
         </div>
       </div>

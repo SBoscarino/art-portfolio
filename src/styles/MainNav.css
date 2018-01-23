@@ -36,4 +36,9 @@ h1 {
 /* tablets+ */
 @media screen and (min-width: 768px) {
   /* Add the borders */
+  /*.wrapperForContent {
+    margin: 100px 250px 0px 250px;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+  }*/
 }
