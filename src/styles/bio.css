@@ -25,3 +25,12 @@ p {
     padding: 30px 50px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .bioPhoto {
+    width: 30%;
+  }
+  .bioParagraph1, .bioParagraph2, .bioParagraph3{
+    padding: 50px 100px;
+  }
+}
