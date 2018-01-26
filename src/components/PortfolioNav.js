@@ -76,7 +76,7 @@ class PortfolioNav extends Component {
     if (this.state.photography === true) {
       infoView = <div>
         <h2>photography</h2>
-        <p>I'm still learning a lot about proper photo-taking. I'm currently armed with a Canon Rabel T1i and a nice lens!</p>
+        <p>I'm still learning a lot about proper photo-taking. I'm currently armed with a Canon Rebel T1i and a nice lens!</p>
         </div>
         imageView = <div>
           <img className="singleImage LionFiller" alt="Reykyavik church in Iceland" src={icelandChurch}/>
@@ -96,9 +96,7 @@ class PortfolioNav extends Component {
         <p>I work with a range of materials like metals, papier mache and clay.</p>
         </div>
       imageView = <div>
-        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
-        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
-        <img className="LionFiller singleImage" alt="lion filler" src={LionFillerImage}/>
+        <p>Sorry - nothing uploaded yet!</p>
       </div>
     } if (this.state.digital === true) {
       infoView = <div>
