@@ -78,3 +78,23 @@ h2 {
     border-radius: 100px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .infoHolder{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .imageHolder{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .imageHolderTwo{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .LionFiller {
+    height: 220px;
+    border: #f57 solid 4px;
+    border-radius: 120px;
+  }
+}
